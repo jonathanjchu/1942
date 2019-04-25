@@ -1,0 +1,164 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color:black;
+}
+#container{
+    background: url('ocean.jpg');
+    width:1000px;
+    height:550px;
+}
+#hero{
+    background: url('1942.gif');
+    background-position: -30px -10px;
+    width:28px;
+    height:28px;
+    position:absolute;
+}
+.enemy0{
+    background: url('1942.gif');
+    background-position: -85px -180px;
+    width:28px;
+    height:28px;
+    position:absolute;
+    transform: rotate(180deg);
+}
+.enemy1{
+    background: url('1942.gif');
+    background-position: -90px -125px;
+    width:32px;
+    height:32px;
+    position:absolute;
+    transform: rotate(180deg);
+}
+.bullet{
+    background: url('1942.gif');
+    background-position: -185px -400px;
+    width:18px;
+    height:18px;
+    position:absolute;
+}
+
+.display_box{
+    position:absolute;
+    border:10px solid red;
+    background-color: whitesmoke;
+    padding: 10px 0;
+    min-width: 100px;
+    min-height: 50px;
+    text-align: center;
+}
+
+.display_box h3 {
+    font: 18px 'Share Tech Mono', monospace;
+}
+
+#score_box {
+    top:20px;
+    left:800px;
+}
+
+#life_box {
+    top:100px;
+    left:800px;
+}
+
+#score {
+    font: 20px 'Share Tech Mono', monospace;
+}
+
+#life_counter{}
+
+.lives {
+    background: url('1942.gif');
+    background-position: -30px -10px;
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+}
+
+#gameover{
+    height: 550px;
+    width: 1000px;
+    background-color: black;
+    font: 48px 'Share Tech Mono', monospace;
+    text-align: center;
+    padding-top: 200px;
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+#reset {
+    background: black;
+    color: white;
+    font: 16px 'Share Tech Mono', monospace;
+    border: 2px solid white;
+    height: 40px;
+    width: 124px;
+}
+
+.explosion0 {
+    background: url('1942.gif');
+    background-position: -5px -395px;
+    width:18px;
+    height:18px;
+    position:absolute;
+}
+
+.explosion1 {
+    background: url('1942.gif');
+    background-position: -27px -395px;
+    width:18px;
+    height:18px;
+    position:absolute;
+}
+
+.explosion2 {
+    background: url('1942.gif');
+    background-position: -50px -395px;
+    width:18px;
+    height:18px;
+    position:absolute;
+}
+
+.hero_explosion0 {
+    background: url('1942.gif');
+    background-position: -145px -32px;
+    width:32px;
+    height:32px;
+    position:absolute;
+}
+.hero_explosion1 {
+    background: url('1942.gif');
+    background-position: -110px -32px;
+    width:32px;
+    height:32px;
+    position:absolute;
+}
+.hero_explosion2 {
+    background: url('1942.gif');
+    background-position: -85px -32px;
+    width:32px;
+    height:32px;
+    position:absolute;
+}
+.hero_explosion2 {
+    background: url('1942.gif');
+    background-position: -60px -32px;
+    width:24px;
+    height:24px;
+    position:absolute;
+}
+.hero_explosion3 {
+    background: url('1942.gif');
+    background-position: -30px -32px;
+    width:24px;
+    height:24px;
+    position:absolute;
+}

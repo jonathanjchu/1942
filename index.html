@@ -1,72 +1,39 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
+	<meta charset="UTF-8">
 	<title>1942 Game</title>
 
-<style type="text/css">
-	body{
-		background-color:black;
-	}
-	#container{
-		background: url('background.jpg');
-		width:1000px;
-		height:550px;
-	}
-	#hero{
-		background: url('1942.gif');
-		background-position: -85px -180px;
-		width:28px;
-		height:28px;
-		position:absolute;
-	}
-	.enemy1{
-		background: url('1942.gif');
-		background-position: -30px -10px;
-		width:28px;
-		height:28px;
-		position:absolute;
-	}
-	.bullet{
-		background: url('1942.gif');
-		background-position: -185px -400px;
-		width:18px;
-		height:18px;
-		position:absolute;
-	}
-	#score{
-		position:absolute;
-		border:10px solid red;
-		top:20px;
-		left:800px;
-		background-color:white;
-		padding:10px;
-		font-size:30px;
-		font-family: Arial;	
-	}
-</style>
+	<link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono" rel="stylesheet">
+	<link href="styles.css" rel="stylesheet" />
 </head>
+
 <body>
 	<div id='container'>
-		<div id='hero' style='top:300px; left:300px;'></div>
-		<div id='enemies'>
-			<div class='enemy1' style='top:100px; left:100px;'></div>
-			<div class='enemy1' style='top:100px; left:200px;'></div>
-			<div class='enemy1' style='top:100px; left:300px;'></div>
-			<div class='enemy1' style='top:100px; left:400px;'></div>
-		</div>
-		<div id='bullets'>
-			<div class='bullet' style='top:150px; left:200px;'></div>
-			<div class='bullet' style='top:250px; left:200px;'></div>
-			<div class='bullet' style='top:350px; left:200px;'></div>
-			<div class='bullet' style='top:450px; left:200px;'></div>
-		</div>	
+		<div id="hero"></div>
+		<div id="enemies"></div>
+		<div id="bullets"></div>
+		<div id="explosions"></div>
+		<div id="hero_explosion"></div>
 	</div>
 
-	<div id='score'>100</div>
+	<div class="display_box" id="score_box">
+		<h3>SCORE</h3>
+		<p id="score"></p>
+	</div>
+	<div class="display_box" id="life_box">
+		<h3>LIVES</h3>
+		<div id="life_counter">3</div>
+	</div>
+	<div id="gameover">
+		<h1>GAME OVER</h1>
+		<button id="reset" onclick="resetAll()">start over</button>
+	</div>
+	<script src="1942.js">
 
-
-<script>
-
-</script>
+	</script>
 
 </body>
+
 </html>
